@@ -1,127 +1,152 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Oratorio S. Rita </title>
-
-<style>
-
-header {
-  font-family: "Georgia", "Times New Roman", serif; 
-  font-size: 175%;
-  background-color: #19181c;
-  overflow: hidden;
-  margin: 0;
-  padding:2%; 
-  color: #ebd6d1;
-}
-
-body {
-  font-family: "Georgia", "Times New Roman", serif; 
-   font-size: 150%;
-   margin:0;
-   padding:0;
-   background-color: #ebd6d1;
-}
-
-ul {
-  margin: 0; 
-  padding: 0;
-  background-color: #19181c;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-li{
-  display: inline; 
-  float: left;
-}
-
-a {
-  display: block;
-  padding: 1em;
-  color: #ebd6d1;
-  text-decoration: none;
+  <title>Oratorio S. Rita</title>
   
-}
+  <style>
+  
+  html {
+  scroll-behavior: smooth;
+  }
+  
+   header {
+      font-size: 1.75em;
+      background-color: #19181c;
+      padding: 1em;
+      color: #ede4e4;
+      text-align: center;
+    }
+  
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #ede4e4;
+      color: #19181c;
+    }
+    
 
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #ff5312;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-li a:hover {
-  background-color: #ff5312;
-  color: white;
-}
+    li {
+      margin: 0;
+    }
 
-#box1 {
-  border-radius: 25px;
-  background: #19181c;
-  opacity: 0.5;
-  padding: 20%; 
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 200%;
-  height: 150%; 
-}
+    a {
+      display: block;
+      padding: 1em 1.5em;
+      color: #ede4e4;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
 
-.title{
-  font-family: "Georgia", "Times New Roman", serif; 
-  font-size: 150%;
-  color:#19181c;
-  margin-left: 5%;
-  text-align:left;
-}
+    li a:hover {
+      background-color: #ff2e12;
+      color: white;
+    }
 
-.ph{
-  font-family: "Georgia", "Times New Roman", serif; 
-  font-size: 150%;
-  color:white;
-  padding 2%;
-  opacity:1;
-  position: relative;
-  left:auto;
-}
+   .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.2em;
+    }
 
-</style>
-</head> 
+  .box {
+    flex: 1 1 45%;
+    background-color: #19181c;
+    color: white;
+    opacity:0.95;
+    padding: 1.5em;
+
+    }
+   
+ .title {
+      font-size: 1.5em;
+      margin-left:1em;
+      padding: 0 1em;
+      
+    }
+    
+  .ph {
+      font-size: 1.1em;
+      color: white;
+      line-height: 1.6;
+    }
+    
+    img{
+      border-radius: 25px;
+    }
+
+    @media (max-width: 768px) {
+    .box {
+    flex: 1 1 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5em;
+              }
+       }
+    
+  </style>
+</head>
 <body>
 
+  <header><strong>Oratorio 2025</strong></header>
 
-<header> <center> <b> Oratorio 2025 </b> </center> </header>
-
-<ul>
- <li class="home"><a href="#home"> Home </a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-
-<br>
-
-<h3 class="title"> Chi siamo? </h3>
-
-<div id="box1"> 
-
-<h2 class="ph">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, numquam atque! Praesentium voluptatum suscipit itaque doloribus sit rem, amet eos, hic atque quaerat libero iusto voluptates, molestias perspiciatis? Maxime, magni?
-</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contatti</a></li>
+    <li><a href="#about">Chi siamo</a></li>
+  </ul>
 
 
+  <h3 class="title" style="margin-top: 2em;"> <b> Chi siamo? </b> </h3>
 
+  <div class="box-container">
+  <div class="box">
+  <center>
+ <h3 class="title" style="color:#ff5312;">Oratorio Santa Rita</h3>
+ 
+ <p class="ph">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil tenetur reprehenderit nostrum natus illum non voluptatum animi voluptates reiciendis deleniti, quos consequatur mollitia? Eligendi in hic nobis commodi molestias.
+ </p>
 
+ <img src="https://www.cpbeatopaleari.it/Objects/966_App_file/PoglianoMilaneseChiesaSantaRita-s.jpeg">
+ 
+ 
 </div>
 
-
-
+  </center>
+  
+  <br>
+  
+   </div> 
+   
+   <div class="box">
+    <center>
+    <h3 class="title" style="color:#ff5312;">Oratorio San Luigi</h3>
+ 
+ <p class="ph">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil tenetur reprehenderit nostrum natus illum non voluptatum animi voluptates reiciendis deleniti, quos consequatur mollitia? Eligendi in hic nobis commodi molestias.
+ </p>
+  </center>
+  
+  </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
