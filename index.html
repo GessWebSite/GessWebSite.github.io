@@ -94,13 +94,7 @@
       font-size:225%;
       }
 
-    @media screen (max-width: 768px) {
-    .box {
-    flex: 1 1 100%;
-        }
-    }
-
-     @media screen (max-width: 600px) {
+     @media screen and (min-width: 576px) {
       header {
         font-size: 200%; 
       }
@@ -116,7 +110,10 @@
         padding: 0;
         background-color: #ede4e4;
         color: #19181c;
-    }
+      }
+    .box {
+      flex: 1 1 100%;
+       }
      
      }
   </style>
