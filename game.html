@@ -1,0 +1,118 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-color:#aacef2;
+}
+
+.container {
+  display: grid;
+  gap: 20px 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 10px;
+}
+
+.container > div {
+  background-color: white;
+  border: 1px solid black;
+  padding: 0; /* rimosso il padding che deformava i quadrati */
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1; /* rende il div perfettamente quadrato */
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+  }
+
+  .container > div {
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>The gap Property</h1>
+<p>Use the <em>gap</em> shorthand property to adjust the space between the columns and rows.</p>
+
+<div class="container">
+  
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>
+  <div>13</div>
+  <div>14</div>
+  <div>15</div>
+  <div>16</div>
+  <div>17</div>
+  <div>18</div>
+  <div>19</div>
+  <div>20</div>
+  <div>21</div>
+  <div>22</div>
+  <div>23</div>
+  <div>24</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
