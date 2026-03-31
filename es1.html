@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Sito Base</title>
+
+    <style>
+        body {
+            background-color: beige;
+            color: maroon;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .output {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Risultati del ciclo</h2>
+
+    <script>
+        let k=0;             
+        const j = 5; 
+
+        for (let i = 0; i < 5; i++) {
+            k = k+1;   
+            const p = document.createElement("p");
+            p.className = "output";
+            p.textContent = "Iterazione " + i + ": k = " + k + ", j = " + j;
+            document.body.appendChild(p);
+        }
+    </script>
+
+</body>
+</html>
